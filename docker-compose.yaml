@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+  gido-front-nuxt:
+    build: .
+    container_name: gido-front-nuxt
+    ports:
+      - '8080:8080'
