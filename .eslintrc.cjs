@@ -25,6 +25,13 @@ module.exports = {
 
     rules: {
         'vue/multi-word-component-names': 'off',
+        '@typescript-eslint/consistent-type-imports': [
+          'error',
+          {
+            prefer: 'type-imports',
+            fixStyle: 'inline-type-imports',
+          }
+        ],
         semi: ['error', 'always'],
         quotes: ['error', 'single'],
         'no-useless-constructor': 'off',
@@ -89,12 +96,6 @@ module.exports = {
         '@typescript-eslint/no-var-requires': 0,
         '@typescript-eslint/ban-ts-comment': 0,
         '@typescript-eslint/no-explicit-any': 0,
-        '@typescript-eslint/consistent-type-imports': [
-          'error',
-            {
-                prefer: 'type-imports',
-                fixStyle: 'inline-type-imports',
-            }
-        ],
+
     },
 };

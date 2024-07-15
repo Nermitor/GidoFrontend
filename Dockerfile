@@ -16,7 +16,7 @@ FROM node:18-alpine as node-runtime
 WORKDIR /app
 COPY --link --from=node-builder /app/.output /app
 
-ENV PORT 8080
-EXPOSE 8080
+ENV PORT 3100
+EXPOSE 3100
 
 CMD ["node", "/app/server/index.mjs" ]
